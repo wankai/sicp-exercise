@@ -5,3 +5,9 @@
 
 (define (le x y)
   (or (< x y) (= x y)))
+
+(define (smallest x y z)
+  (cond ((and (le x y) (le x z)) x)
+        ((and (le y z) (le y z)) y)
+        (else z)))
+
