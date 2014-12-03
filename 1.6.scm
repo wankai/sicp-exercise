@@ -8,4 +8,4 @@
           (sqrt-iter (improve guess x) x))
 
 ; because new-if is applicative-order and sqrt is recursive procedure
-; (sqrt-iter x) will loop forever
+; (sqrt-iter guess x) will loop forever
