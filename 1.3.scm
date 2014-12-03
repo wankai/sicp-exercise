@@ -11,3 +11,7 @@
         ((and (le y z) (le y z)) y)
         (else z)))
 
+; solution
+(define (sum-of-two-larger x y z)
+  (- (sum-of-square x y z)
+     (square (smallest x y z))))
