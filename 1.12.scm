@@ -19,4 +19,5 @@
   
 (define (draw-pascal-line-iter column row n)
   (display (pascal row column))
-  (if (< column row) (display " ")))
+  (if (< column row) (display " "))
+  (draw-pascal-line-iter (- column 1) row n))
