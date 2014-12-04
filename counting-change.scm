@@ -12,7 +12,7 @@
         ((= n 1) pennu)))
 
 (define (counting-change money)
-  (counting-change money 5))
+  (counting-change-iter money 5))
   
 (define (counting-change-iter money n)
   (cond ((< money 0) 0)
